@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="QT QMediaPlayer High CPU usage," />
 
 
 
@@ -84,15 +84,19 @@
 
 
 
-<meta name="description" content="Code Possible">
-<meta property="og:type" content="website">
-<meta property="og:title" content="爱cooking的coder">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="根据搜索引擎的结果，要想实现QT下播放多媒体，一般有两种方案：一种是使用第三方插件，好像叫Phonon；一种是使用QT自带的QMediaplayer。
+   两种方法各有利弊。使用第三方插件，则方便易用，封装性和易用性都很突出，但是，它万一不更新了，就成了一笔坏账了；而使用QT自带的QMediaplayer，可以享受QT团队的持续升级和支持，但是这个特性据说是5.0版本才引入和被支持的。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="QMediaPlayer占用CPU过高问题">
+<meta property="og:url" content="http://yoursite.com/2016/10/12/QT中QMediaPlayer占用CPU过高问题-md/index.html">
 <meta property="og:site_name" content="爱cooking的coder">
-<meta property="og:description" content="Code Possible">
+<meta property="og:description" content="根据搜索引擎的结果，要想实现QT下播放多媒体，一般有两种方案：一种是使用第三方插件，好像叫Phonon；一种是使用QT自带的QMediaplayer。
+   两种方法各有利弊。使用第三方插件，则方便易用，封装性和易用性都很突出，但是，它万一不更新了，就成了一笔坏账了；而使用QT自带的QMediaplayer，可以享受QT团队的持续升级和支持，但是这个特性据说是5.0版本才引入和被支持的。">
+<meta property="og:updated_time" content="2016-10-12T08:36:11.472Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="爱cooking的coder">
-<meta name="twitter:description" content="Code Possible">
+<meta name="twitter:title" content="QMediaPlayer占用CPU过高问题">
+<meta name="twitter:description" content="根据搜索引擎的结果，要想实现QT下播放多媒体，一般有两种方案：一种是使用第三方插件，好像叫Phonon；一种是使用QT自带的QMediaplayer。
+   两种方法各有利弊。使用第三方插件，则方便易用，封装性和易用性都很突出，但是，它万一不更新了，就成了一笔坏账了；而使用QT自带的QMediaplayer，可以享受QT团队的持续升级和支持，但是这个特性据说是5.0版本才引入和被支持的。">
 
 
 
@@ -113,9 +117,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/12/QT中QMediaPlayer占用CPU过高问题-md/"/>
 
-  <title> 爱cooking的coder </title>
+  <title> QMediaPlayer占用CPU过高问题 | 爱cooking的coder </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,9 +140,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -215,9 +217,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -237,10 +239,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/10/12/QT中QMediaPlayer占用CPU过高问题-md/" itemprop="url">
-                  QMediaPlayer占用CPU过高问题
-                </a>
+                QMediaPlayer占用CPU过高问题
               
             
           </h1>
@@ -280,9 +279,7 @@
       
 
       
-        
-          
-            <p>   根据搜索引擎的结果，要想实现QT下播放多媒体，一般有两种方案：一种是使用第三方插件，好像叫Phonon；一种是使用QT自带的QMediaplayer。</p>
+        <p>   根据搜索引擎的结果，要想实现QT下播放多媒体，一般有两种方案：一种是使用第三方插件，好像叫Phonon；一种是使用QT自带的QMediaplayer。</p>
 <p>   两种方法各有利弊。使用第三方插件，则方便易用，封装性和易用性都很突出，但是，它万一不更新了，就成了一笔坏账了；而使用QT自带的QMediaplayer，可以享受QT团队的持续升级和支持，但是这个特性据说是5.0版本才引入和被支持的。</p>
 <p>   项目使用的QT版本为5.4.2，所以，果断采用QMediaPlayer。</p>
 <p>   实现功能：就是使用QT播放指定声音，且让该声音循环播放。</p>
@@ -367,133 +364,58 @@
 </code></pre>
 <p>   Finally，经过我的实验验证，无论是在我的电脑，还是在同事的电脑上，CPU占用率都降下来了！Settled！Nice！</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/15/FirstBlog-md/" itemprop="url">
-                  敲锣打鼓庆祝开博
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-15T18:06:16+08:00" content="2016-07-15">
-              2016-07-15
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
-          
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/QT-QMediaPlayer-High-CPU-usage/" rel="tag">#QT QMediaPlayer High CPU usage</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>GitHub的博客终于开好了，折腾了大半天，梦寐以求的新主页终于来到了。</p>
-<blockquote>
-<p>有志者，事竟成，三千越甲可吞吴。<br>苦心人，天不负，百二秦关终属楚。</p>
-</blockquote>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/07/15/FirstBlog-md/" rel="next" title="敲锣打鼓庆祝开博">
+                <i class="fa fa-chevron-left"></i> 敲锣打鼓庆祝开博
+              </a>
+            
+          </div>
 
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -501,6 +423,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -520,8 +446,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/noodles.jpg"
@@ -564,6 +499,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -660,6 +606,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
